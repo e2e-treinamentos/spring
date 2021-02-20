@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "74b4fd73-ac27-49e0-ab0e-a8da8b14776f",
+		"name": "Api Carnaval",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "inm-test-api.herokuapp.com/empregado/list/33",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "inm-test-api.herokuapp.com/empregado/list/33",
+					"host": [
+						"inm-test-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"empregado",
+						"list",
+						"33"
+					]
+				},
+				"description": "teste"
+			},
+			"response": []
+		},
+		{
+			"name": "inm-test-api.herokuapp.com/empregado/cadastrar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"admissao\": \"18/02/2021\",\r\n  \"cargo\": \"Analista de Teste\",\r\n  \"comissao\": \"1.000,00\",\r\n  \"cpf\": \"959.146.100-36\",\r\n  \"departamentoId\": 1,\r\n  \"nome\": \"Seu Madruga Test\",\r\n  \"salario\": \"1.000,00\",\r\n  \"sexo\": \"m\",\r\n  \"tipoContratacao\": \"clt\"\r\n}"
+				},
+				"url": {
+					"raw": "inm-test-api.herokuapp.com/empregado/cadastrar",
+					"host": [
+						"inm-test-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"empregado",
+						"cadastrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "inm-test-api.herokuapp.com/empregado/list_all",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "automacao",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "inmetrics",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "inm-test-api.herokuapp.com/empregado/list_all",
+					"host": [
+						"inm-test-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"empregado",
+						"list_all"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "automacao",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "inmetrics",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
